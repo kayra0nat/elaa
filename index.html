@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Merak Oyunu</title>
+<title>Ela Oyunu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {
@@ -100,7 +100,7 @@
 
 <script>
 function noClicked() {
-    alert("Tamam, anladım 😊");
+    alert("Tamam,");
 }
 
 function yesClicked() {
@@ -136,12 +136,12 @@ function yesClicked() {
 function showHeart() {
     const heart = document.createElement('div');
     heart.className = 'heart';
-    heart.innerText = '💖';
+    heart.innerText = '💜';
     heart.style.left = Math.random() * (window.innerWidth - 50) + 'px';
     heart.style.top = Math.random() * (window.innerHeight - 50) + 'px';
     document.body.appendChild(heart);
 
-    // 2 saniye sonra kalbi kaldır
+    // 10 saniye sonra kalbi kaldır
     setTimeout(() => {
         heart.remove();
     }, 2000);
@@ -150,3 +150,4 @@ function showHeart() {
 
 </body>
 </html>
+
